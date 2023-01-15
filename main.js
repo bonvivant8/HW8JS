@@ -128,9 +128,14 @@ console.log('Your answer is  '+result9);
 
 //10
 
-const newArr=myArr.splice(0,-100);
-newArr.push(maxNumber);
-console.log(newArr)
+for (let y =0;y<myArr.length;y++)
+{
+    if (myArr[y]<maxNumber)
+    {
+        myArr[y]=0;
+    }
+}
+console.log(myArr);
 
 
 
